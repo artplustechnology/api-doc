@@ -6,20 +6,24 @@ api-doc for wunder-v2
 
 # Work
 
-** Get a work **
+**Get a work**
 ----
 Return an array of works
 
 * **URL**
+
   /api/v2/works
   
 * **Method:**
+
   `GET**
   
 * **URL Params**
+
   None
   
 * **Data Params**
+
   None
   
 * **Success Response:**
@@ -40,29 +44,42 @@ Return an array of works
     });
   ```
 
-** Upload a work **
+**Upload a work**
 ----
 Return json data with status and message
 
 * **URL**
+
   /api/v2/works/:bucket-name/upload
 
 * **Method:**
+
   `POST`
 
 * **URL Params**
+
   **Required:**
+
   `bucket-name=[string]`
   
 * **Data Params**
+
   **Required**
+
   `ownerId=[string]`
+
   `title=[string]`
+
   `year=[number]`
+
   `material=[string]`
+
   `description=[string]`
+
   `timeextract=[string]` Format: HH:MM:SS
+  
   `watermark=[string]`
+
   `user_file=[File]`
 
 * **Success Response:**
